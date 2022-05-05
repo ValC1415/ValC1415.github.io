@@ -1,0 +1,386 @@
+:root {
+    --color_primario: #00b2c0;
+    --color_secundario: #393939;
+    --type:'Merriweather', serif;
+}
+
+* {
+    margin: 0em; 
+    padding: 0em; 
+    box-sizing: border-box; 
+    text-decoration: none; 
+    font-family: var(--type);
+}
+body{
+    font-size: 10px;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+h1 {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+
+/*header*/
+.encabezado {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    justify-content: space-between;
+    align-items: center;
+}
+.encabezado .logo{
+    width: 20%;
+}
+.subheader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+}
+.menu ul li {
+    display: inline;
+    margin: .7em;
+    font-size: 2em;
+    color: black;
+}
+.menu a{
+    color: black;
+}
+.conocenos{
+  background-color: var(--color_primario); 
+  border-radius: 50px;
+  padding: 1em;
+  font-size: 2em;
+}
+.conocenos a{
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+
+/*marca*/
+.marca {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 4em;
+    margin-bottom: 7em;
+    gap: 150px;
+    align-items: flex-start;
+    font-size: 2em;
+}
+.marca .texto{
+    display: flex;
+    flex-direction: column;
+}
+.marca .titulo{
+    font-size: 3em;
+    color:var(--color_primario);
+    margin-bottom: 1em; 
+}
+.marca .foto {
+    width: 350%;
+    align-self: center;
+}
+
+
+/*colores*/
+.colores {
+    background-color: var(--color_secundario); 
+}
+.colores .coloresres{
+    width: 80%;
+    margin: auto;
+    padding-top: 4em;
+    padding-bottom: 7em;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+}
+.colores .titulo{
+    font-size: 3em;
+    color:white;
+    margin-bottom: 1em; 
+}
+.bloques{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    color: rgb(255, 255, 255);
+    justify-content:flex-start;
+}
+.bloques .c1{
+    background-color: #7eb35d;
+    padding: 1.7em;
+    width: 18%;
+    text-align: center;
+}
+.bloques .c2{
+    background-color: #ffe46a;
+    padding: 1.7em;
+    width: 18%;
+    text-align: center;
+}
+.bloques .c3{
+    background-color: #f7ac24;
+    padding: 1.7em;
+    width: 18%;
+    text-align: center;
+}
+.bloques .c4{
+    background-color: #e5342a;
+    padding: 1.7em;
+    width: 18%;
+    text-align: center;
+}
+.bloques .c5{
+    background-color: #a36772;
+    padding: 1.7em;
+    width: 18%;
+    text-align: center;
+}
+.bloques .c6{
+    background-color: #c69fc6;
+    padding: 1.7em;
+    width: 18%;
+    text-align: center;
+}
+.bloques .c7{
+    background-color: #918bbe;
+    padding: 1.7em;
+    width: 18%;
+    text-align: center;
+}
+.bloques .c8{
+    background-color: #139ec1;
+    padding: 1.7em;
+    width: 18%;
+    text-align: center;
+}
+.bloques .c9{
+    background-color: #95c5d4;
+    padding: 1.7em;
+    width: 18%;
+    text-align: center;
+}
+.bloques .c10{
+    background-color: #00b2c0;
+    padding: 1.7em;
+    width: 18%;
+    text-align: center;
+}
+
+
+/*footer*/
+.footer{
+    background-color: var(--color_primario);
+}
+.contenedor {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    padding: 5em 0em 5em 0em;
+}
+.contenedor a{
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+    color: black;
+}
+.contenedor .contenido{
+    padding: 1em;
+}
+.contenedor .item1{
+    justify-content: center;
+    font-size: 4em;
+    margin-right: 5em;
+    margin-bottom: 1.2em;  
+}
+.contenido h4{
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+.contenido ul li{
+    list-style: none;
+    margin-bottom: .5em;
+    font-size: 1.5em;
+}
+.iconos ul li{
+    display: inline;
+    margin-right: 1em;
+    font-size: 3em;
+}
+
+
+/* ##Dispositivo = Smartphones de 320px a 479px */
+@media (min-width: 320px) and (max-width: 480px) {
+
+
+    .encabezado {
+        flex-direction: column;
+    }
+    .encabezado .logo{
+        width: 100%;
+        margin-bottom: 1.5em;
+    }
+    .subheader{
+        width: 100%;
+        justify-content: space-between;
+        gap: 0px;
+    }
+    .menu ul li {
+        display:block;
+        margin: 0em;
+        font-size: 1.2em;
+    }
+    .conocenos{
+      padding: .5em;
+      font-size: 1.5em;
+    }
+    .menu{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*marca*/
+    .marca {
+        flex-direction:column-reverse;
+        margin-bottom: 4em;
+        gap: 50px;
+    }
+    .marca .titulo{
+        font-size: 1.5em;
+        margin-bottom: .7em; 
+    }
+    .marca .foto {
+        width: 100%;
+    }
+
+
+    /*colores*/
+    .colores .coloresres{
+        padding-bottom: 4em;
+    }
+    .colores .titulo{
+        font-size: 1.5em;
+        margin-bottom: .7em; 
+    }
+    .bloques{
+        justify-content:center;
+    }
+    .bloques .c1{
+        padding: .8em;
+        width: 45%;
+    }
+    .bloques .c2{
+        padding: .8em;
+        width: 45%;
+    }
+    .bloques .c3{
+        padding: .8em;
+        width: 45%;
+    }
+    .bloques .c4{
+        padding: .8em;
+        width: 45%;
+    }
+    .bloques .c5{
+        padding: .8em;
+        width: 45%;
+    }
+    .bloques .c6{
+        padding: .8em;
+        width: 45%;
+    }
+    .bloques .c7{
+        padding: .8em;
+        width: 45%;
+    }
+    .bloques .c8{
+        padding: .8em;
+        width: 45%;
+    }
+    .bloques .c9{
+        padding: .8em;
+        width: 45%;
+    }
+    .bloques .c10{
+        padding: .8em;
+        width: 45%;
+    }
+
+
+    /*footer*/
+    .contenedor {
+        flex-wrap: wrap;
+        justify-content:flex-start;
+    }
+    .contenedor .contenido{
+        width: 50%;
+    }
+    .contenedor .item1{
+        font-size: 3em;
+        margin-right: 1.2em; 
+        margin-bottom: 1em;  
+    }
+    .contenedor .contenidodo{
+        margin-bottom: 4em;
+    }
+
+
+}
